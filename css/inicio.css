@@ -1,0 +1,521 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: burlywood;
+}
+
+header {
+  background-color: burlywood;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main {
+  background-color: burlywood;
+}
+main nav {
+  text-align: center;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main a {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-decoration: none;
+  width: 19rem;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+main a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  background-color: burlywood;
+}
+footer a {
+  color: black;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+footer a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.sobre-mi {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+}
+.sobre-mi nav {
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sobre-mi nav a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.sobre-mi nav a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.propia {
+  display: grid;
+  margin: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  grid-template-areas: "area1 area2 area3" "area4 area2 area6" "area7 area8 area9";
+}
+.propia #area1 {
+  grid-area: area1;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area2 {
+  grid-area: area2;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area3 {
+  grid-area: area3;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area4 {
+  grid-area: area4;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area5 {
+  grid-area: area5;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area6 {
+  grid-area: area6;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area7 {
+  grid-area: area7;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area8 {
+  grid-area: area8;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+.propia #area9 {
+  grid-area: area9;
+}
+.propia img {
+  height: 100%;
+  width: 100%;
+}
+
+.sobre-mi-footer {
+  text-align: center;
+}
+.sobre-mi-footer a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: large;
+}
+.sobre-mi-footer a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.contactame-header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+}
+.contactame-header nav {
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactame-header nav a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.contactame-header nav a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contactame-main {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  background-color: burlywood;
+}
+.contactame-main article {
+  color: black;
+  margin: 10px;
+}
+.contactame-main article .formu {
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.contactame-footer {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+}
+.contactame-footer a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.contactame-footer a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.suplementos-header {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+}
+.suplementos-header nav {
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.suplementos-header a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.suplementos-header a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.body-suplementos {
+  background-color: burlywood;
+  display: grid;
+  height: 100vh;
+}
+
+.suplementos {
+  margin: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  grid-template-areas: "area1 area2 area3 area4" "area5 area6 area7 area8";
+}
+.suplementos .area-suplementos {
+  border: 1px solid black;
+  color: black;
+}
+.suplementos .area-suplementos:hover {
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.suplementos #area1 {
+  grid-area: area1;
+}
+.suplementos #area1 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area2 {
+  grid-area: area2;
+}
+.suplementos #area2 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area3 {
+  grid-area: area3;
+}
+.suplementos #area3 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area4 {
+  grid-area: area4;
+}
+.suplementos #area4 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area5 {
+  grid-area: area5;
+}
+.suplementos #area5 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area6 {
+  grid-area: area6;
+}
+.suplementos #area6 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area7 {
+  grid-area: area7;
+}
+.suplementos #area7 img {
+  height: 100%;
+  width: 100%;
+}
+.suplementos #area8 {
+  grid-area: area8;
+}
+.suplementos #area8 img {
+  height: 100%;
+  width: 100%;
+}
+
+.redes-suplementos {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+}
+.redes-suplementos a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.redes-suplementos a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.trabaja-conmigo-header {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+}
+.trabaja-conmigo-header nav {
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.trabaja-conmigo-header a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.trabaja-conmigo-header a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.main-trabaja-conmigo {
+  margin: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas: "area1 area2 area3 area4" "area5";
+}
+.main-trabaja-conmigo .area-trabaja-conmigo {
+  border: 1px solid black;
+  color: black;
+  margin-bottom: 20px;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo:hover {
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.main-trabaja-conmigo .area-trabaja-conmigo #area1 {
+  grid-area: area1;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo img {
+  height: 100%;
+  width: 100%;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo #area2 {
+  grid-area: area2;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo img {
+  height: 100%;
+  width: 100%;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo #area3 {
+  grid-area: area3;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo img {
+  height: 100%;
+  width: 100%;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo #area4 {
+  grid-area: area4;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo img {
+  height: 100%;
+  width: 100%;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo #area5 {
+  grid-area: area5;
+}
+.main-trabaja-conmigo .area-trabaja-conmigo img {
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  border: 1px solid black;
+}
+
+.footer-trabaja-conmigo {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+.footer-trabaja-conmigo:hover {
+  transform: scale(1.5);
+}
+.footer-trabaja-conmigo a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+  border: 1px solid black;
+}
+.footer-trabaja-conmigo a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.redes-trabaja-conmigo {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+}
+.redes-trabaja-conmigo a {
+  color: black;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.redes-trabaja-conmigo a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 320px) {
+  .propia {
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 200px);
+    gap: 10px;
+    grid-template-areas: "area1" "area2" "area3" "area4" "area6" "area7" "area8" "area9";
+  }
+}
+@media (max-width: 320px) {
+  .suplementos {
+    margin: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" "area7" "area8";
+  }
+}
+@media (max-width: 320px) {
+  .main-trabaja-conmigo {
+    margin: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 250px);
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5";
+  }
+}
+
+/*# sourceMappingURL=inicio.css.map */

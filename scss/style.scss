@@ -1,0 +1,625 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@import "partials/mixins.scss";
+
+
+// damos estilo a la pag inicio
+// Damos estilos al body
+body{
+  background-color: burlywood;
+}
+
+// Damos estilos al header de la pag inicio
+header {
+  background-color: burlywood;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+// Damos estilos al main de la pag inicio
+main {
+  background-color: burlywood;
+
+  nav {
+    text-align: center;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-decoration: none;
+    width: 19rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// Damos estilos al footer de la pag inicio
+footer {
+  text-align: center;
+  background-color: burlywood;
+
+  a {
+    color: black;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+// Damos estilos a la pagina sobre mi
+// Damos estilos a el header de la pag sobre mi
+.sobre-mi {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+
+  nav {
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    a {
+      color: black;
+      text-decoration: none;
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+      }
+    }
+  }
+}
+
+// Damos estilos al main de la pag sobre mi
+// diseñamos el grid de la seccion principal de la pag sobre mi
+
+.propia {
+  display: grid;
+  margin: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+  grid-template-areas:
+    "area1 area2 area3"
+    "area4 area2 area6"
+    "area7 area8 area9";
+
+
+
+  #area1 {
+    grid-area: area1;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area2 {
+    grid-area: area2;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area3 {
+    grid-area: area3;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area4 {
+    grid-area: area4;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area5 {
+    grid-area: area5;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area6 {
+    grid-area: area6;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area7 {
+    grid-area: area7;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+
+  #area8 {
+    grid-area: area8;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+
+    }
+  
+
+  #area9 {
+    grid-area: area9;
+  }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  
+}
+// Le damos estilos al footer dela pag sobre mi
+
+.sobre-mi-footer {
+  text-align: center;
+
+  a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: large;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+// Le damos estilo a la pag contactame
+// Le damos estilos a el header
+.contactame-header {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+
+  nav {
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    a {
+      color: black;
+      text-decoration: none;
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+      }
+    }
+  }
+}
+
+// Le damos estilos al main de la pag contactame
+.contactame-main {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  background-color: burlywood;
+
+  article {
+    color: black;
+    margin: 10px;
+
+    .formu {
+      margin: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+// Le damos estilos al footer de la pagina contactame
+.contactame-footer {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+
+  a {
+    color: black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+  }
+}
+
+// Comenzamos a darle estilos a la pag Suplementos
+// Le damos estilos al header de la pag suplementos
+.suplementos-header {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+
+
+  nav {
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+  }
+}
+// le damos estilos al body de la pag suplementos (esto lo hice para sacar las lineas blancas que me da el boostrap por defecto en el html)
+.body-suplementos{
+  background-color: burlywood;
+  display: grid;
+  height: 100vh;
+  
+}
+// Diseñamos el grid de el main de la pag suplementos
+
+
+  .suplementos {
+    margin: 5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas:
+      "area1 area2 area3 area4"
+      "area5 area6 area7 area8";
+
+    .area-suplementos {
+      border: 1px solid black;
+      color: black;
+
+      &:hover {
+        color: black;
+        font-weight: bold;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    #area1 {
+      grid-area: area1;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area2 {
+      grid-area: area2;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area3 {
+      grid-area: area3;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area4 {
+      grid-area: area4;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area5 {
+      grid-area: area5;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area6 {
+      grid-area: area6;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area7 {
+      grid-area: area7;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #area8 {
+      grid-area: area8;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+  }
+
+
+// Le damos estilos al footer de la pag suplementos
+.redes-suplementos {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+
+  a {
+    color: black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+  }
+}
+
+// Comenzamos a darle estilos a la pag trabaja conmigo
+// Le damos estilos al header de la pag trabaja conmigo
+.trabaja-conmigo-header {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: burlywood;
+
+
+  nav {
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+  }
+}
+
+// le damos estilos al main de la pag trabaja conmigo
+// Diseñamos el grid se la seccion principal
+
+.main-trabaja-conmigo {
+  margin: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas:
+    "area1 area2 area3 area4"
+    "area5";
+
+  .area-trabaja-conmigo {
+    border: 1px solid black;
+    color: black;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+
+    #area1{
+      grid-area: area1;
+    }
+      img{
+       height: 100%;
+       width: 100%;
+      }
+    
+
+    #area2{
+      grid-area: area2;
+    }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    
+
+    #area3{
+      grid-area: area3;
+    }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    
+
+    #area4{
+      grid-area: area4;
+    }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    
+
+    #area5{
+      grid-area: area5;
+    }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+}
+}
+h3{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  border: 1px solid black;
+}
+// Le damos estilos al footer de la pag trabaja conmigo
+.footer-trabaja-conmigo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    transition: 0.3s ease;
+
+    &:hover{
+      transform: scale(1.5);
+    }
+
+  
+    a {
+      color: black;
+      text-decoration: none;
+      transition: box-shadow 0.3s ease-in-out;
+      border: 1px solid black;
+  
+      &:hover {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  
+      }
+    }
+  }
+
+.redes-trabaja-conmigo {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px;
+
+  a {
+    color: black;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    }
+  }
+}
+@include medias-queries-sobre-mi;
+@include media-queries-suplementos;
+@include medias-queries-trabaja-conmigo;
+
+
+
